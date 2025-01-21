@@ -1,5 +1,6 @@
+let city = 'havre'
 const urlParams = new URLSearchParams(window.location.search);
-const city = urlParams.get(`city`)
+city = urlParams.get(`city`)
 
 if (city == null || city == "") {
   city = `havre`
