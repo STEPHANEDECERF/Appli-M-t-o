@@ -1,0 +1,33 @@
+    console.log(data)
+
+    // affiche le nom de la ville
+    console.log(data.city.name)
+
+    // date et heure
+    console.log(moment(data.list[0].dt_txt).locale("fr").format("LLLL"))
+
+    // temperature
+    console.log(data.list[0].main.temp)
+
+    // temps en cours : description
+    console.log(data.list[0].weather[0].description)
+
+    // humidite
+    console.log(data.list[0].main.humidity)
+
+    // vent
+    console.log(data.list[0].wind.speed)
+
+
+    // Image
+    console.log(data.list[0].weather[0].icon)
+
+
+    
+
+
+    // temperature min 
+    console.log(data.list[0].main.temp_min)
+
+    // temperature max
+    console.log(data.list[0].main.temp_max)
